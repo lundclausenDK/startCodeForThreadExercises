@@ -7,11 +7,11 @@ import java.awt.*;
 /**
  * Start code for Thread Exercise
  */
-class Ball {
+class Ball extends Thread {
 
   private final int SLEEP_TIME = 30;
   Color color;
-  boolean stop = false;
+  volatile boolean stop = false;
   private JPanel canvas;
   private static final int XSIZE = 15;
   private static final int YSIZE = 15;

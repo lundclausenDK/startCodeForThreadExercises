@@ -31,3 +31,18 @@ public class Tester {
     System.out.println("Number of random numbers >= 50: " + consumer.getAboveOr50().size());
   }
 }
+
+/* ANSWERS:
+
+    a) 
+    - More threads can produce more random numbers, faster
+    - The BQ size is 5, so I assume we need an empty space were one thread can put in at the same time as the consumer works in the other end
+    - I will choose put() which creates the block we need
+    - I will choose take(), which releases the block
+
+    b) Done
+
+    c) Done
+
+    d) Done
+*/
