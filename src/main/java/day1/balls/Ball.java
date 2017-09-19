@@ -60,7 +60,8 @@ class Ball {
     g.dispose();
   }
 
-
+  
+  
   public void run() {
     stop = false;
     while (!stop) {
@@ -72,5 +73,6 @@ class Ball {
       }
     }
   }
+
 
 }
