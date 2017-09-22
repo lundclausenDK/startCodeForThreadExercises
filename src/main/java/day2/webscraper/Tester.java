@@ -15,11 +15,11 @@ public class Tester {
         TagCounter tc3 = new TagCounter("http://politiken.dk/");
         tc3.start();
         
-        long end = System.nanoTime();
-
         tc1.join();
         tc2.join();
         tc3.join();
+        
+        long end = System.nanoTime();
 
         System.out.println("Title: " + tc1.getTitle());
         System.out.println("Div's: " + tc1.getDivCount());
